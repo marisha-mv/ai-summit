@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summit 2026 Marketing Proposal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #ec4899;
+            --dark: #0f172a;
+            --gray-900: #1e293b;
+            --gray-700: #334155;
+            --gray-500: #64748b;
+            --gray-300: #cbd5e1;
+            --gray-100: #f1f5f9;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gray-100);
+            color: var(--gray-900);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Cover Page */
+        .cover {
+            min-height: 100vh;
+            background: var(--gradient);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .cover-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .cover h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(48px, 8vw, 80px);
+            color: white;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 30px rgba(0,0,0,0.2);
+        }
+
+        .cover-subtitle {
+            font-size: clamp(20px, 3vw, 28px);
+            color: rgba(255,255,255,0.9);
+            font-weight: 300;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .cover-meta {
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+
+        .cover-angle {
+            margin-top: 60px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            padding: 30px 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .cover-angle-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 10px;
+        }
+
+        .cover-angle-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        /* Section Styles */
+        .section {
+            background: white;
+            border-radius: 24px;
+            padding: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--gray-100);
+        }
+
+        .section-number {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: var(--dark);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            color: var(--gray-500);
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: var(--dark);
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: var(--gray-700);
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--gray-700);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th {
+            background: var(--dark);
+            color: white;
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--gray-100);
+            color: var(--gray-700);
+        }
+
+        tr:nth-child(even) {
+            background: var(--gray-100);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Paradigm Shift Table */
+        .paradigm-table th:first-child {
+            background: #dc2626;
+        }
+
+        .paradigm-table th:last-child {
+            background: #16a34a;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .card {
+            background: var(--gray-100);
+            border-radius: 16px;
+            padding: 25px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .card-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card h4 {
+            margin: 0 0 10px 0;
+            color: var(--dark);
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: var(--gradient);
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Blockquotes */
+        blockquote {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-left: 4px solid var(--primary);
+            padding: 25px 30px;
+            margin: 25px 0;
+            border-radius: 0 16px 16px 0;
+            font-style: italic;
+            color: var(--gray-700);
+        }
+
+        blockquote strong {
+            color: var(--dark);
+            font-style: normal;
+        }
+
+        /* Ad Copy Boxes */
+        .ad-box {
+            background: white;
+            border: 2px solid var(--gray-300);
+            border-radius: 16px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
+
+        .ad-header {
+            background: var(--dark);
+            color: white;
+            padding: 15px 25px;
+            font-weight: 600;
+        }
+
+        .ad-content {
+            padding: 25px;
+        }
+
+        .ad-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .ad-copy {
+            background: var(--gray-100);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            white-space: pre-wrap;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .ad-meta {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .ad-meta-item {
+            font-size: 13px;
+        }
+
+        .ad-meta-label {
+            color: var(--gray-500);
+        }
+
+        .ad-meta-value {
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        /* Video Scripts */
+        .video-script {
+            background: var(--dark);
+            border-radius: 20px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
+
+        .video-header {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            padding: 25px 30px;
+            color: white;
+        }
+
+        .video-number {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .video-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .video-meta {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .video-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .video-body {
+            padding: 30px;
+            color: #e2e8f0;
+        }
+
+        .video-section {
+            margin-bottom: 25px;
+        }
+
+        .video-section-label {
+            color: var(--secondary);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .video-script-text {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 15px;
+            line-height: 1.9;
+            white-space: pre-wrap;
+        }
+
+        .video-cta {
+            background: var(--gradient);
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Social Posts */
+        .social-carousel {
+            background: white;
+            border: 1px solid var(--gray-300);
+            border-radius: 16px;
+            margin: 25px 0;
+            overflow: hidden;
+        }
+
+        .carousel-header {
+            background: linear-gradient(135deg, #f43f5e 0%, #ec4899 100%);
+            color: white;
+            padding: 15px 20px;
+            font-weight: 600;
+        }
+
+        .carousel-slides {
+            padding: 20px;
+        }
+
+        .carousel-slide {
+            background: var(--gray-100);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 3px solid var(--primary);
+        }
+
+        .slide-number {
+            font-size: 11px;
+            color: var(--gray-500);
+            margin-bottom: 5px;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 15px 0 15px 25px;
+            color: var(--gray-700);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .highlight-box h4 {
+            color: #92400e;
+            margin-top: 0;
+        }
+
+        /* Summary Box */
+        .summary-box {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .summary-box h3 {
+            color: #065f46;
+            margin-top: 0;
+        }
+
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Funnel Diagram */
+        .funnel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .funnel-stage {
+            text-align: center;
+            padding: 20px;
+            margin: 5px 0;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .funnel-stage-1 {
+            background: #6366f1;
+            width: 100%;
+        }
+
+        .funnel-stage-2 {
+            background: #8b5cf6;
+            width: 80%;
+        }
+
+        .funnel-stage-3 {
+            background: #a855f7;
+            width: 60%;
+        }
+
+        .funnel-stage-4 {
+            background: #ec4899;
+            width: 40%;
+        }
+
+        .funnel-arrow {
+            color: var(--gray-400);
+            font-size: 24px;
+            margin: 5px 0;
+        }
+
+        /* Source Citation */
+        .source {
+            font-size: 12px;
+            color: var(--gray-500);
+        }
+
+        .source a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .source a:hover {
+            text-decoration: underline;
+        }
+
+        /* Priority Badge */
+        .priority {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .priority-1 {
+            background: #fef2f2;
+            color: #dc2626;
+        }
+
+        .priority-2 {
+            background: #fff7ed;
+            color: #ea580c;
+        }
+
+        .priority-3 {
+            background: #fefce8;
+            color: #ca8a04;
+        }
+
+        /* Print Styles */
+        @media print {
+            .cover {
+                min-height: auto;
+                padding: 40px;
+            }
+
+            .section {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid var(--gray-300);
+            }
+
+            .video-script {
+                break-inside: avoid;
+            }
+        }
+
+        /* TOC */
+        .toc {
+            background: white;
+            border-radius: 24px;
+            padding: 40px 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .toc-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--gray-100);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toc-list li:last-child {
+            border-bottom: none;
+        }
+
+        .toc-number {
+            background: var(--gray-100);
+            color: var(--gray-700);
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        .toc-title {
+            flex: 1;
+            color: var(--gray-700);
+        }
+
+        .toc-page {
+            color: var(--gray-400);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+    <div class="cover-content">
+        <div class="cover-badge">Marketing Strategy Proposal</div>
+        <h1>AI Summit 2026</h1>
+        <p class="cover-subtitle">A comprehensive marketing campaign to drive free summit registrations and convert attendees to the $6K Mastery program</p>
+        <p class="cover-meta">Prepared for Mindvalley | February 2026</p>
+
+        <div class="cover-angle">
+            <p class="cover-angle-label">Primary Campaign Angle</p>
+            <p class="cover-angle-title">"The Great Reclamation"</p>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="toc">
+        <h3>Contents</h3>
+        <ul class="toc-list">
+            <li><span><span class="toc-number">1</span><span class="toc-title">Executive Summary</span></span></li>
+            <li><span><span class="toc-number">2</span><span class="toc-title">The Core Paradigm Shift</span></span></li>
+            <li><span><span class="toc-number">3</span><span class="toc-title">Research Foundation</span></span></li>
+            <li><span><span class="toc-number">4</span><span class="toc-title">Case Studies: Million-Dollar Solopreneurs</span></span></li>
+            <li><span><span class="toc-number">5</span><span class="toc-title">Funnel Strategy</span></span></li>
+            <li><span><span class="toc-number">6</span><span class="toc-title">Paid Ad Copy</span></span></li>
+            <li><span><span class="toc-number">7</span><span class="toc-title">Social Media Content</span></span></li>
+            <li><span><span class="toc-number">8</span><span class="toc-title">Viral Video Scripts for Vishen</span></span></li>
+            <li><span><span class="toc-number">9</span><span class="toc-title">Filming Priority & Recommendations</span></span></li>
+        </ul>
+    </div>
+
+    <!-- SECTION 1: EXECUTIVE SUMMARY -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">1</div>
+            <h2>Executive Summary</h2>
+            <p class="section-subtitle">The strategic foundation for AI Summit 2026</p>
+        </div>
+
+        <h3>The Opportunity</h3>
+        <p>800 million people use ChatGPT weekly. Yet <strong>80% of companies report zero productivity gains</strong> from AI. This disconnect represents a massive opportunity: people are hungry for AI transformation but failing to achieve it.</p>
+
+        <p>The reason isn't tools, prompts, or systems. <strong>It's mindset.</strong></p>
+
+        <h3>The Big Idea</h3>
+        <blockquote>
+            <strong>"The Great Reclamation"</strong> &mdash; AI isn't about productivity. It's about getting your life back from a business that was supposed to set you free.
+        </blockquote>
+
+        <p>This angle works because:</p>
+        <ul>
+            <li>It leads with the #1 desire of our audience: <strong>time freedom</strong></li>
+            <li>It explains why AI "didn't work" for them (validates their experience)</li>
+            <li>It creates differentiation from every other AI course/summit</li>
+            <li>It positions the $6K Mastery as the logical next step</li>
+        </ul>
+
+        <h3>Target Audience</h3>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-label">Primary</div>
+                <h4>Solopreneurs & Freelancers</h4>
+                <p>Working 50+ hours/week, feeling trapped by the business they built for freedom</p>
+            </div>
+            <div class="card">
+                <div class="card-label">Secondary</div>
+                <h4>Small Business Owners</h4>
+                <p>1-10 employees, can't scale themselves, AI-curious but haven't cracked it</p>
+            </div>
+        </div>
+
+        <h3>Funnel Overview</h3>
+        <div class="funnel">
+            <div class="funnel-stage funnel-stage-1">Viral Content + Paid Ads</div>
+            <div class="funnel-arrow">&#8595;</div>
+            <div class="funnel-stage funnel-stage-2">Free AI Summit Registration</div>
+            <div class="funnel-arrow">&#8595;</div>
+            <div class="funnel-stage funnel-stage-3">Summit Experience (Mindset Shift)</div>
+            <div class="funnel-arrow">&#8595;</div>
+            <div class="funnel-stage funnel-stage-4">$6K Mastery Offer</div>
+        </div>
+    </div>
+
+    <!-- SECTION 2: PARADIGM SHIFT -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">2</div>
+            <h2>The Core Paradigm Shift</h2>
+            <p class="section-subtitle">The belief change we need to create</p>
+        </div>
+
+        <p>Every successful campaign creates a <strong>paradigm shift</strong>&mdash;a change in how the audience sees their problem and its solution. Here's the mental transformation we're engineering:</p>
+
+        <table class="paradigm-table">
+            <thead>
+                <tr>
+                    <th style="width: 50%;">Old Belief (What They Think)</th>
+                    <th style="width: 50%;">New Belief (What We Install)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"I need to learn AI tools"</td>
+                    <td><strong>"AI tools aren't the problem. My mindset is."</strong></td>
+                </tr>
+                <tr>
+                    <td>"I tried ChatGPT&mdash;it didn't work for me"</td>
+                    <td><strong>"You used AI like a search engine. It's meant to be a thinking partner."</strong></td>
+                </tr>
+                <tr>
+                    <td>"AI will save me time"</td>
+                    <td><strong>"AI reveals whether you deserve more time. Most people don't&mdash;they just fill it with more busywork."</strong></td>
+                </tr>
+                <tr>
+                    <td>"I need to work harder/smarter"</td>
+                    <td><strong>"You need to think differently. Hard work is a symptom of a broken system."</strong></td>
+                </tr>
+                <tr>
+                    <td>"The successful people know better prompts"</td>
+                    <td><strong>"The successful people have a different relationship with time, identity, and work."</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight-box">
+            <h4>The Key Insight</h4>
+            <p>Most people treat AI like a faster employee. The winners treat AI like a <strong>mirror</strong>&mdash;revealing which work shouldn't exist in the first place. This isn't a skill gap. It's an <strong>identity shift</strong>.</p>
+        </div>
+    </div>
+
+    <!-- SECTION 3: RESEARCH FOUNDATION -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">3</div>
+            <h2>Research Foundation</h2>
+            <p class="section-subtitle">Data-backed claims for credibility</p>
+        </div>
+
+        <h3>The Burnout Crisis</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">68%</div>
+                <div class="stat-label">of entrepreneurs work 50+ hours/week</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">42%</div>
+                <div class="stat-label">experienced burnout in the past month</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">59%</div>
+                <div class="stat-label">can't set work-life boundaries</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">+10%</div>
+                <div class="stat-label">more burnout for solopreneurs vs. partners</div>
+            </div>
+        </div>
+        <p class="source">Sources: <a href="https://zipdo.co/entrepreneur-burnout-statistics/" target="_blank">ZipDo</a>, <a href="https://gitnux.org/entrepreneur-burnout-statistics/" target="_blank">Gitnux</a>, <a href="https://lifehackmethod.com/blog/entrepreneur-mental-health-statistics/" target="_blank">LifeHack Method</a></p>
+
+        <h3>The AI Reality Check</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">800M</div>
+                <div class="stat-label">weekly ChatGPT users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">80%</div>
+                <div class="stat-label">of firms report ZERO productivity gains</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">28%</div>
+                <div class="stat-label">of workers actually use AI for work</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8 in 10</div>
+                <div class="stat-label">fail with ChatGPT (mindset issue)</div>
+            </div>
+        </div>
+        <p class="source">Sources: <a href="https://backlinko.com/chatgpt-stats" target="_blank">Backlinko</a>, <a href="https://www.nber.org/papers/w34836" target="_blank">NBER 2026 Study</a>, <a href="https://openai.com/business/guides-and-resources/chatgpt-usage-and-adoption-patterns-at-work/" target="_blank">OpenAI</a></p>
+
+        <h3>The Mindset Problem (Research)</h3>
+        <blockquote>
+            "The unique concern with ChatGPT is that rather than augmenting our capacity to think critically, LLMs give us the ability to <strong>offload critical thinking altogether</strong>."
+            <br><br>
+            &mdash; WBUR Research Study, 2026
+        </blockquote>
+
+        <ul>
+            <li><strong>40% of developers</strong> using AI code slower on their own now&mdash;they outsourced thinking, not tasks</li>
+            <li>ChatGPT users show <strong>weakest neural connectivity</strong> in brain studies&mdash;because they're offloading thinking instead of expanding capacity</li>
+            <li>Most people fail because of <strong>vague prompts</strong>&mdash;a thinking problem, not a tool problem</li>
+        </ul>
+        <p class="source">Sources: <a href="https://www.wbur.org/onpoint/2026/01/01/ai-dumb-you-down-brain-chatgpt" target="_blank">WBUR</a>, <a href="https://vocal.media/01/chat-gpt-is-ruining-you-the-hidden-dangers-of-ai-over-reliance" target="_blank">Vocal.media</a>, <a href="https://medium.com/write-a-catalyst/why-people-fail-with-chatgpt-and-the-simple-framework-that-fixes-everything-2dd6c89621e7" target="_blank">Medium</a></p>
+    </div>
+
+    <!-- SECTION 4: CASE STUDIES -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>Case Studies: Million-Dollar Solopreneurs</h2>
+            <p class="section-subtitle">"Show Don't Tell" — Real proof that one person + AI can build empires</p>
+        </div>
+
+        <p>These aren't hypotheticals. These are real entrepreneurs running million-dollar businesses <strong>alone</strong>—using automation and AI as their leverage.</p>
+
+        <!-- Case Study 1: Justin Welsh -->
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: 20px; padding: 35px; margin: 30px 0; color: white;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 280px;">
+                    <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #a5b4fc; margin-bottom: 8px;">Case Study #1</p>
+                    <h3 style="font-size: 28px; margin: 0 0 10px 0; color: white;">Justin Welsh</h3>
+                    <p style="color: #94a3b8; margin: 0;">Solopreneur, Creator Economy</p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="font-size: 48px; font-weight: 800; color: #a5b4fc; margin: 0; line-height: 1;">$5M</p>
+                    <p style="color: #94a3b8; font-size: 14px; margin: 0;">Annual Revenue</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center;">
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">90%</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Profit Margin</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">4 hrs</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Work Per Day</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">0</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Full-Time Employees</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">$0</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Ad Spend</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <p style="color: #e2e8f0; margin: 0;"><strong>How he does it:</strong> Zapier automations, Kajabi for courses, TweetHunter for scheduling, Airtable for systems. "I sit around dreaming about what automation I can build." One part-time VA for customer service. Everything else is automated or systematized.</p>
+            <p style="color: #94a3b8; font-size: 12px; margin-top: 15px;">Source: <a href="https://blog.questflow.ai/p/how-justin-welsh-achieves-over-5" target="_blank" style="color: #a5b4fc;">Questflow</a>, <a href="https://www.starterstory.com/stories/justin-welsh" target="_blank" style="color: #a5b4fc;">Starter Story</a></p>
+        </div>
+
+        <!-- Case Study 2: Pieter Levels -->
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: 20px; padding: 35px; margin: 30px 0; color: white;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 280px;">
+                    <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #34d399; margin-bottom: 8px;">Case Study #2</p>
+                    <h3 style="font-size: 28px; margin: 0 0 10px 0; color: white;">Pieter Levels (@levelsio)</h3>
+                    <p style="color: #94a3b8; margin: 0;">Nomad List, Remote OK, Photo AI</p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="font-size: 48px; font-weight: 800; color: #34d399; margin: 0; line-height: 1;">$5.3M</p>
+                    <p style="color: #94a3b8; font-size: 14px; margin: 0;">Annual Revenue (2024)</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center;">
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">40+</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Startups Launched</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">$0</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Funding Raised</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">0</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Employees</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">1</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Laptop</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <p style="color: #e2e8f0; margin: 0;"><strong>How he does it:</strong> Self-taught developer. Bootstrapped everything. Rule: "Only add complexity when absolutely necessary." Launched 12 startups in 12 months, focused on winners. Travels the world while running a portfolio of profitable businesses.</p>
+            <p style="color: #94a3b8; font-size: 12px; margin-top: 15px;">Source: <a href="https://www.starterstory.com/stories/nomad-list-breakdown" target="_blank" style="color: #34d399;">Starter Story</a>, <a href="https://getlatka.com/companies/nomad-list" target="_blank" style="color: #34d399;">Latka</a></p>
+        </div>
+
+        <!-- Case Study 3: Kat Norton -->
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: 20px; padding: 35px; margin: 30px 0; color: white;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 280px;">
+                    <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #f472b6; margin-bottom: 8px;">Case Study #3</p>
+                    <h3 style="font-size: 28px; margin: 0 0 10px 0; color: white;">Kat Norton (Miss Excel)</h3>
+                    <p style="color: #94a3b8; margin: 0;">Excel Training via TikTok/Reels</p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="font-size: 48px; font-weight: 800; color: #f472b6; margin: 0; line-height: 1;">$1M+</p>
+                    <p style="color: #94a3b8; font-size: 14px; margin: 0;">Annual Revenue</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center;">
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">$100K</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Revenue in Single Day</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">Daily</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Video Posts</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">1M+</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">TikTok Followers</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">Excel</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Topic (Yes, Really)</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <p style="color: #e2e8f0; margin: 0;"><strong>How she does it:</strong> Made Excel entertaining on TikTok. Posts daily viral reels. Hosts monthly "Excel Parties" (webinars) that generate $100K in a single day. Turned the world's most boring software into a million-dollar personal brand.</p>
+            <p style="color: #94a3b8; font-size: 12px; margin-top: 15px;">Source: <a href="https://www.starterstory.com/successful-solopreneurs-making-1-million-per-year" target="_blank" style="color: #f472b6;">Starter Story</a></p>
+        </div>
+
+        <!-- Case Study 4: Eric Barone -->
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: 20px; padding: 35px; margin: 30px 0; color: white;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 280px;">
+                    <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #fbbf24; margin-bottom: 8px;">Case Study #4</p>
+                    <h3 style="font-size: 28px; margin: 0 0 10px 0; color: white;">Eric Barone (ConcernedApe)</h3>
+                    <p style="color: #94a3b8; margin: 0;">Stardew Valley (Video Game)</p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="font-size: 48px; font-weight: 800; color: #fbbf24; margin: 0; line-height: 1;">$300M</p>
+                    <p style="color: #94a3b8; font-size: 14px; margin: 0;">Total Revenue</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center;">
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">1</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Developer</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">4 yrs</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">To Build</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">20M+</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Copies Sold</p>
+                </div>
+                <div>
+                    <p style="font-size: 28px; font-weight: 700; color: white; margin: 0;">0</p>
+                    <p style="color: #94a3b8; font-size: 13px; margin: 0;">Investors</p>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
+            <p style="color: #e2e8f0; margin: 0;"><strong>How he did it:</strong> One person made everything—code, art, music, writing. Started to improve job prospects. $1M in sales within first 3 weeks. Still runs it solo. Proof that one obsessed person can outperform entire studios.</p>
+            <p style="color: #94a3b8; font-size: 12px; margin-top: 15px;">Source: <a href="https://www.starterstory.com/successful-solopreneurs-making-1-million-per-year" target="_blank" style="color: #fbbf24;">Starter Story</a></p>
+        </div>
+
+        <div class="highlight-box">
+            <h4>The Pattern</h4>
+            <p><strong>What these solopreneurs have in common:</strong></p>
+            <ul>
+                <li>They didn't hire teams—they built <strong>systems</strong></li>
+                <li>They automated ruthlessly—only doing what <strong>only they</strong> could do</li>
+                <li>They chose <strong>leverage over labor</strong></li>
+                <li>They have a <strong>mindset</strong> that most entrepreneurs never develop</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>This is what we're teaching at AI Summit 2026.</strong></p>
+        </div>
+    </div>
+
+    <!-- SECTION 5: FUNNEL STRATEGY -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">5</div>
+            <h2>Funnel Strategy</h2>
+            <p class="section-subtitle">From viral content to $6K conversion</p>
+        </div>
+
+        <h3>The Bridge Logic</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Stage</th>
+                    <th>Purpose</th>
+                    <th>Key Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Viral Content</strong></td>
+                    <td>Create awareness & desire</td>
+                    <td>"AI can give you your life back&mdash;but 80% are doing it wrong"</td>
+                </tr>
+                <tr>
+                    <td><strong>Paid Ads</strong></td>
+                    <td>Drive qualified registrations</td>
+                    <td>"Free summit reveals the mindset shift that makes AI actually work"</td>
+                </tr>
+                <tr>
+                    <td><strong>Summit</strong></td>
+                    <td>Deliver transformation (the "what")</td>
+                    <td>"This is what's possible. This is why it works."</td>
+                </tr>
+                <tr>
+                    <td><strong>$6K Mastery</strong></td>
+                    <td>Provide implementation (the "how")</td>
+                    <td>"The complete system, coaching, and community to make it real"</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Summit to Mastery Transition</h3>
+        <blockquote>
+            "At the summit, you saw what's possible. You experienced the mindset shift. Now the question is: <strong>do you want to stay inspired, or do you want to be transformed?</strong>
+            <br><br>
+            The Mastery gives you the complete blueprint, the done-for-you systems, and 12 weeks of coaching to actually implement this&mdash;so you're not just motivated, you're <strong>living it</strong>."
+        </blockquote>
+    </div>
+
+    <!-- SECTION 5: PAID AD COPY -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">6</div>
+            <h2>Paid Ad Copy</h2>
+            <p class="section-subtitle">Facebook, Instagram & YouTube</p>
+        </div>
+
+        <!-- AD 1 -->
+        <div class="ad-box">
+            <div class="ad-header">AD 1: "The 80% Stat" &mdash; Pattern Interrupt + Curiosity Gap</div>
+            <div class="ad-content">
+                <div class="ad-label">Hook Visual</div>
+                <p>Text overlay: "80% of businesses using AI see ZERO productivity gains."</p>
+
+                <div class="ad-label">Primary Text</div>
+                <div class="ad-copy">Here's what nobody's telling you about AI:
+
+80% of companies using it report no improvement in productivity. Zero. (NBER Study, 2026)
+
+Meanwhile, a small group is getting 10+ hours back every week.
+
+Same tools. Radically different results.
+
+The difference? It's not the prompts. It's not the tools. It's not even the systems.
+
+<strong>It's a mindset most entrepreneurs don't even know they're missing.</strong>
+
+You've been taught to use AI like a fancy search engine. Ask a question, get an answer, move on.
+
+That's like buying a Ferrari and only using it to check your mailbox.
+
+At AI Summit 2026, Vishen reveals the mental shift that separates the 80% who are spinning their wheels from the few who've genuinely reclaimed their time.
+
+Free. Online. Limited seats.</div>
+
+                <div class="ad-meta">
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">Headline:</span>
+                        <span class="ad-meta-value">The AI Mindset Shift That Gives You 10+ Hours Back</span>
+                    </div>
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">CTA:</span>
+                        <span class="ad-meta-value">Sign Up Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AD 2 -->
+        <div class="ad-box">
+            <div class="ad-header">AD 2: "The Uncomfortable Question" &mdash; Identity + Emotional Trigger</div>
+            <div class="ad-content">
+                <div class="ad-label">Hook Visual</div>
+                <p>Vishen direct to camera, caption: "When's the last time you had a weekday completely free?"</p>
+
+                <div class="ad-label">Primary Text</div>
+                <div class="ad-copy">You built this business for freedom.
+
+So why are you working 60 hours a week?
+
+Why are you checking emails at 10PM?
+
+Why did "I'll relax when things slow down" become a permanent state?
+
+42% of business owners experienced burnout in the last month alone.
+
+Here's the truth nobody wants to admit:
+
+<strong>AI didn't save most entrepreneurs. It just gave them more ways to stay busy.</strong>
+
+But there's another path. A small percentage figured out something different.
+
+They didn't learn more tools. They changed how they think.
+
+At AI Summit 2026, you'll discover why the AI revolution failed most people—and the mindset shift that makes it actually work.
+
+This isn't another productivity hack.
+
+It's the path back to the life you were building toward.</div>
+
+                <div class="ad-meta">
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">Headline:</span>
+                        <span class="ad-meta-value">You Didn't Build This Business to Be a Prisoner</span>
+                    </div>
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">CTA:</span>
+                        <span class="ad-meta-value">Register Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AD 3 -->
+        <div class="ad-box">
+            <div class="ad-header">AD 3: "The Math" &mdash; Logic + Shock</div>
+            <div class="ad-content">
+                <div class="ad-label">Hook Visual</div>
+                <p>Calculator visual with numbers</p>
+
+                <div class="ad-label">Primary Text</div>
+                <div class="ad-copy">Let's do the math nobody does:
+
+→ 60 hours/week × 50 weeks = 3,000 hours/year
+→ Studies show 70% of solopreneur work is AI-automatable
+→ That's 2,100 hours on tasks AI should be doing
+→ 2,100 hours = <strong>262 eight-hour days</strong>
+
+You're losing 262 days a year to work you shouldn't be doing.
+
+That's not a productivity problem.
+
+That's a <em>life</em> problem.
+
+And here's the uncomfortable part:
+
+800 million people use ChatGPT. But 80% of companies report zero productivity gains.
+
+Why? Because <strong>they're using AI with an employee mindset—not an architect mindset.</strong>
+
+The tool isn't broken. The thinking is.
+
+At AI Summit 2026, you'll learn the mindset shift that turns AI from a distraction into an actual life-reclaiming machine.
+
+Free event. Serious transformation.</div>
+
+                <div class="ad-meta">
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">Headline:</span>
+                        <span class="ad-meta-value">262 Days a Year. Gone.</span>
+                    </div>
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">CTA:</span>
+                        <span class="ad-meta-value">Sign Up Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AD 4 -->
+        <div class="ad-box">
+            <div class="ad-header">AD 4: "The Confession" &mdash; Vulnerability + Paradigm Shift</div>
+            <div class="ad-content">
+                <div class="ad-label">Hook Visual</div>
+                <p>Vishen, serious tone, "I need to confess something about AI..."</p>
+
+                <div class="ad-label">Primary Text</div>
+                <div class="ad-copy">I've been teaching productivity for 20 years.
+
+And I almost got AI completely wrong.
+
+When ChatGPT launched, I did what everyone did—learned prompts, built systems, tried to "optimize."
+
+I got 10% faster.
+
+Meanwhile, I watched a few people get 10x more free.
+
+Same tools. Completely different results.
+
+The difference wasn't what they knew.
+
+<strong>It was who they had become.</strong>
+
+They didn't have an "AI system."
+
+They had an AI <em>mindset</em>—a fundamentally different relationship with work, time, and what a business is supposed to be.
+
+Most AI education teaches you prompts.
+
+This teaches you the transformation that makes prompts irrelevant.
+
+AI Summit 2026. Free.
+
+This is the thing I wish someone had taught me 2 years ago.</div>
+
+                <div class="ad-meta">
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">Headline:</span>
+                        <span class="ad-meta-value">The Mindset Nobody Taught Me About AI</span>
+                    </div>
+                    <div class="ad-meta-item">
+                        <span class="ad-meta-label">CTA:</span>
+                        <span class="ad-meta-value">Watch Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>YouTube Pre-Roll Scripts</h3>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-label">15-Second Script</div>
+                <p>"800 million people use AI. 80% see zero results. The difference isn't tools—it's mindset. At AI Summit 2026, I'll show you the shift that actually gives you your time back. Free registration—link below."</p>
+            </div>
+            <div class="card">
+                <div class="card-label">30-Second Script</div>
+                <p>"I spent 60 hours a week building my business. I thought that's what success required. Then I discovered the top 1% of entrepreneurs weren't working harder—they were thinking differently. Not better prompts. Not more tools. A completely different mindset about AI, work, and time. At AI Summit 2026, I'll show you exactly what that shift looks like—and how to make it yourself. It's free. But it might be the most important thing you learn this year. Link below."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 6: SOCIAL MEDIA CONTENT -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">7</div>
+            <h2>Social Media Content</h2>
+            <p class="section-subtitle">Carousels, posts & stories</p>
+        </div>
+
+        <h3>Carousel Posts</h3>
+
+        <p><strong>"Show Don't Tell"</strong> — Use real proof to create desire and FOMO.</p>
+
+        <!-- Carousel 0: Case Studies -->
+        <div class="social-carousel" style="border: 2px solid #10b981;">
+            <div class="carousel-header" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Carousel: "Million-Dollar One-Person Companies" (SHOW DON'T TELL)</div>
+            <div class="carousel-slides">
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 1 (Hook)</span> "These people make millions. They have zero employees. Here's how."</div>
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 2 (Justin Welsh)</span> <strong>Justin Welsh</strong> — $5M/year. 90% profit. Works 4 hours/day. One part-time VA. Everything else? Automated.</div>
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 3 (Pieter Levels)</span> <strong>Pieter Levels</strong> — $5.3M/year. Zero employees. Runs Nomad List, Remote OK, Photo AI from his laptop while traveling the world.</div>
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 4 (Kat Norton)</span> <strong>Miss Excel</strong> — $1M+/year teaching Excel on TikTok. Made $100K in a single day from one webinar.</div>
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 5 (Eric Barone)</span> <strong>Eric Barone</strong> — Built Stardew Valley alone. $300M in revenue. One person did everything.</div>
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 6 (Pattern)</span> The pattern? They didn't hire teams. They built <strong>systems</strong>. They chose leverage over labor.</div>
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 7 (Mindset)</span> This isn't about tools. It's about a <strong>mindset</strong> most entrepreneurs never develop.</div>
+                <div class="carousel-slide" style="border-left-color: #10b981;"><span class="slide-number">Slide 8 (CTA)</span> Want to think like them? Free AI Summit 2026. Link in bio.</div>
+            </div>
+        </div>
+
+        <!-- Carousel 1 -->
+        <div class="social-carousel">
+            <div class="carousel-header">Carousel 1: "The Math Nobody Does"</div>
+            <div class="carousel-slides">
+                <div class="carousel-slide"><span class="slide-number">Slide 1</span> "You're working 60 hours a week. Here's the math that should terrify you."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 2</span> "60 hrs/week × 50 weeks = 3,000 hours/year on your business"</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 3</span> "The average solopreneur spends 70% on tasks AI can do."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 4</span> "That's 2,100 hours on emails, scheduling, research, first drafts, admin..."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 5</span> "2,100 hours = 262 eight-hour days. Gone."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 6</span> "What would you do with 262 extra days?"</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 7</span> "This isn't about AI. It's about getting your life back."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 8</span> "Free AI Summit 2026 → [link in bio]"</div>
+            </div>
+        </div>
+
+        <!-- Carousel 2 -->
+        <div class="social-carousel">
+            <div class="carousel-header">Carousel 2: "The 5AM Club Lie"</div>
+            <div class="carousel-slides">
+                <div class="carousel-slide"><span class="slide-number">Slide 1</span> "The hustle gurus told you to wake up at 5AM. They were wrong."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 2</span> "I tried it. More hours didn't give me more life."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 3</span> "The solution isn't adding hours. It's eliminating the work that steals them."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 4</span> "AI doesn't make you work faster. It makes work disappear."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 5</span> "Same output. Half the time. Twice the life."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 6</span> "Stop optimizing your grind. Start eliminating it."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 7</span> "Learn how → AI Summit 2026 (free)"</div>
+            </div>
+        </div>
+
+        <!-- Carousel 3 -->
+        <div class="social-carousel">
+            <div class="carousel-header">Carousel 3: "What I Actually Do All Day Now"</div>
+            <div class="carousel-slides">
+                <div class="carousel-slide"><span class="slide-number">Slide 1</span> "People ask how I run multiple companies. Here's my actual day."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 2</span> "6AM - Wake up naturally (no alarm)"</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 3</span> "7AM - Gym + podcast (my time)"</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 4</span> "9AM - 3 hours of deep work (AI handles the rest)"</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 5</span> "12PM - Lunch with family (every day)"</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 6</span> "2PM - Creative work only (AI does all admin)"</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 7</span> "5PM - Done. Present with kids."</div>
+                <div class="carousel-slide"><span class="slide-number">Slide 8</span> "This isn't retirement. This is leverage. Learn how → AI Summit"</div>
+            </div>
+        </div>
+
+        <h3>Single Image / Text Posts</h3>
+
+        <div class="ad-box">
+            <div class="ad-header">Post 1: "The Uncomfortable Truth"</div>
+            <div class="ad-content">
+                <div class="ad-copy">You didn't start your business to answer emails at 11PM.
+
+You didn't become an entrepreneur to miss your kid's school play.
+
+You didn't build this life to feel more trapped than when you had a job.
+
+Somewhere along the way, the dream became a prison.
+
+AI isn't about productivity. It's about reclaiming the life your business was supposed to give you.
+
+Free AI Summit → link in bio</div>
+            </div>
+        </div>
+
+        <div class="ad-box">
+            <div class="ad-header">Post 2: "The Question" (Engagement Driver)</div>
+            <div class="ad-content">
+                <div class="ad-copy">If AI could give you back 10 hours this week, what would you actually do with them?
+
+Not "more work."
+Not "get ahead."
+
+What would you do for YOU?
+
+Drop your answer below. 👇</div>
+            </div>
+        </div>
+
+        <div class="ad-box">
+            <div class="ad-header">Post 3: "The Reframe"</div>
+            <div class="ad-content">
+                <div class="ad-copy">Hot take: The goal isn't to "be more productive."
+
+The goal is to do LESS and have MORE.
+
+Less busywork. More presence.
+Less email. More creativity.
+Less grinding. More living.
+
+AI is the first tool in history that actually makes this possible.
+
+Stop using it to do more. Start using it to live more.</div>
+            </div>
+        </div>
+
+        <div class="ad-box">
+            <div class="ad-header">Post 4: "The Contrast"</div>
+            <div class="ad-content">
+                <div class="ad-copy">Two entrepreneurs. Same revenue. Different lives.
+
+Entrepreneur A:
+- Works 65 hours/week
+- Answers emails at dinner
+- Hasn't taken a real vacation in 3 years
+- "I'll slow down when..."
+
+Entrepreneur B:
+- Works 25 hours/week
+- Laptop closes at 4PM
+- Just got back from 3 weeks in Portugal
+- "My AI handles that"
+
+Same business. Different operating system.
+
+Which one are you? Which one do you want to be?</div>
+            </div>
+        </div>
+
+        <h3>Stories / Reels Hooks</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hook</th>
+                    <th>Format</th>
+                    <th>Length</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"I used to work 80 hours a week. Now I work 25. Same revenue. Here's what changed."</td>
+                    <td>Talking head</td>
+                    <td>30-60s</td>
+                </tr>
+                <tr>
+                    <td>"The lie every entrepreneur believes about AI..."</td>
+                    <td>Pattern interrupt</td>
+                    <td>15-30s</td>
+                </tr>
+                <tr>
+                    <td>"POV: You wake up and your AI already handled your inbox, scheduled your meetings, and drafted 3 proposals"</td>
+                    <td>POV/text overlay</td>
+                    <td>15s</td>
+                </tr>
+                <tr>
+                    <td>"If you're still doing [X] manually, we need to talk"</td>
+                    <td>Direct to camera</td>
+                    <td>30s</td>
+                </tr>
+                <tr>
+                    <td>"Watch me get 4 hours of work done in 22 minutes"</td>
+                    <td>Screen share/demo</td>
+                    <td>60s</td>
+                </tr>
+                <tr>
+                    <td>"The real reason you're exhausted (it's not what you think)"</td>
+                    <td>Story hook</td>
+                    <td>45s</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- SECTION 7: VIRAL VIDEO SCRIPTS -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">8</div>
+            <h2>Viral Video Scripts for Vishen</h2>
+            <p class="section-subtitle">Reels, TikTok & YouTube Shorts</p>
+        </div>
+
+        <!-- Video 1 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 1</div>
+                <div class="video-title">"The Lie I Believed"</div>
+                <div class="video-meta">
+                    <span class="video-tag">60-90 seconds</span>
+                    <span class="video-tag">Confession</span>
+                    <span class="video-tag">Paradigm Shift</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Close-up on Vishen's face, serious expression]
+
+"I lied to myself about AI for two years."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">[Pull back to medium shot, casual setting]
+
+"When ChatGPT came out, I did what every productivity nerd does.
+
+Learned the prompts. Built the systems. Optimized everything.
+
+And I got maybe... 10% faster.
+
+[Beat]
+
+Meanwhile, I kept watching a small group of people completely transform how they worked.
+
+Not 10% faster. 10x more free.
+
+Same tools I was using.
+
+[Leans in]
+
+Here's what took me two years to figure out:
+
+The problem was never the prompts. The problem was my mindset.
+
+I was using AI like a faster employee.
+
+They were using AI like a mirror—to see all the work they shouldn't be doing in the first place.
+
+[Beat]
+
+80% of companies using AI report zero productivity gains.
+
+Not because the tools don't work.
+
+Because most people bring an old mindset to a new tool.
+
+[Direct to camera]
+
+The shift isn't learning AI.
+
+The shift is becoming the kind of person AI actually serves."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"I'm teaching this at AI Summit 2026. Free. Link in bio."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 2</div>
+                <div class="video-title">"The 80% Failure"</div>
+                <div class="video-meta">
+                    <span class="video-tag">45-60 seconds</span>
+                    <span class="video-tag">Shock Stat</span>
+                    <span class="video-tag">Pattern Interrupt</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Text on screen, Vishen walking into frame]
+
+TEXT: "80% of companies using AI see ZERO results"
+
+"This number should scare you."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">"A 2026 study surveyed 6,000 executives across four countries.
+
+80% said AI had no impact on their productivity. Zero.
+
+Meanwhile, 800 million people use ChatGPT every week.
+
+So what's happening?
+
+[Stops walking, turns to camera]
+
+Most people use AI to do the same things faster.
+
+More emails. More content. More tasks.
+
+The 20% who actually get results? They use AI to do different things entirely.
+
+They didn't add AI to their workflow.
+
+They let AI reveal which parts of their workflow shouldn't exist.
+
+[Beat]
+
+One group got a faster hamster wheel.
+
+The other group got off the wheel.
+
+Same tool. Different mindset."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"Comment 'MINDSET' and I'll send you what the 20% do differently."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 3</div>
+                <div class="video-title">"The Question That Changed Everything"</div>
+                <div class="video-meta">
+                    <span class="video-tag">60-75 seconds</span>
+                    <span class="video-tag">Personal Story</span>
+                    <span class="video-tag">Emotional Hook</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Vishen sitting, contemplative, soft lighting]
+
+"My daughter asked me a question that broke me."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">"She was seven. I was on my laptop—again—at dinner.
+
+She looked at me and said:
+
+'Daddy, does your computer need you more than us?'
+
+[Pause]
+
+I had built my business for freedom.
+
+And I had become a prisoner in my own creation.
+
+68% of entrepreneurs work over 50 hours a week.
+
+42% experienced burnout in the past month.
+
+We tell ourselves it's temporary. 'Once things slow down...'
+
+Things never slow down.
+
+[Shifts energy, more intense]
+
+AI wasn't invented to make us faster at being busy.
+
+It was invented to make busy obsolete.
+
+But that only works if you have the mindset to let go—to stop proving your worth through your hustle.
+
+[Beat]
+
+I close my laptop at 4PM now. Every day.
+
+Not because I work less. Because I finally learned what work actually deserves my time."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"AI Summit 2026. Free. It's the thing I wish I'd learned before my daughter had to teach me."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 4</div>
+                <div class="video-title">"Why ChatGPT Failed You"</div>
+                <div class="video-meta">
+                    <span class="video-tag">45-60 seconds</span>
+                    <span class="video-tag">Myth-Busting</span>
+                    <span class="video-tag">Validation</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Vishen, slightly frustrated expression, direct to camera]
+
+"If you tried ChatGPT and thought 'this doesn't work'—you were right."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">"Kind of.
+
+Here's the thing no one tells you:
+
+ChatGPT is like a mirror. It reflects the quality of thinking you bring to it.
+
+Vague questions? Vague answers.
+
+Surface-level thinking? Surface-level output.
+
+This is why 8 in 10 people fail with it.
+
+[Shifts tone]
+
+It's not a knowledge problem. It's a thinking problem.
+
+Most people treat AI like a search engine—ask a question, get an answer, move on.
+
+That's like buying a Ferrari and using it to check your mailbox.
+
+The people getting 10+ hours back every week aren't using better prompts.
+
+They're thinking differently about what they should be doing at all.
+
+AI didn't fail you.
+
+You just weren't taught how to think with it."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"Free AI Summit. Link in bio. This is the mindset shift."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 5</div>
+                <div class="video-title">"The Two Types of Entrepreneurs"</div>
+                <div class="video-meta">
+                    <span class="video-tag">60-75 seconds</span>
+                    <span class="video-tag">Comparison</span>
+                    <span class="video-tag">Identity/FOMO</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Split screen or Vishen with hand gestures on each side]
+
+"There are now two types of entrepreneurs. Let me show you the difference."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">"Type One:
+- Works 60+ hours a week
+- Uses AI to write faster emails, create more content, do more stuff
+- Got maybe 10% faster
+- Still exhausted, still behind
+
+Type Two:
+- Works 25-30 hours a week
+- Same revenue—sometimes more
+- Laptop closes at 4PM
+- Takes real vacations
+
+[Beat]
+
+Same tools available to both.
+
+The difference?
+
+Type One added AI to a broken system.
+
+Type Two used AI to expose the broken system—and then eliminated it.
+
+[Direct to camera]
+
+Type One uses AI to be a faster doer.
+
+Type Two uses AI to become an architect—someone who designs systems instead of living inside them.
+
+That's not a skill gap. That's a mindset gap.
+
+Which type are you? And which type do you want to become?"</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"AI Summit 2026. I'll show you the exact mental shift. Free. Link in bio."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 6</div>
+                <div class="video-title">"The Ferrari and the Mailbox"</div>
+                <div class="video-meta">
+                    <span class="video-tag">30-45 seconds</span>
+                    <span class="video-tag">Metaphor</span>
+                    <span class="video-tag">Shareable</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Vishen holding up phone]
+
+"Most people use ChatGPT like this—"</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">"Imagine I gave you a Ferrari.
+
+And every day, you drove it to the end of your driveway to check the mailbox.
+
+That's how most people use AI.
+
+'Write me an email.' 'Summarize this article.' 'Help me brainstorm.'
+
+You're checking your mailbox with a $100,000 machine.
+
+[Beat]
+
+The people getting their lives back aren't using AI for tasks.
+
+They're using AI to question which tasks should exist at all.
+
+Not: 'How do I do this faster?'
+
+But: 'Should I be doing this in the first place?'
+
+That's a mindset shift. And it's the only one that matters."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"AI Summit. Free. The mindset, not just the tools."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 7 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 7</div>
+                <div class="video-title">"The Million-Dollar One-Person Companies" (SHOW DON'T TELL)</div>
+                <div class="video-meta">
+                    <span class="video-tag">60-90 seconds</span>
+                    <span class="video-tag">Case Studies</span>
+                    <span class="video-tag">Social Proof</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Vishen, direct to camera, slightly incredulous tone]
+
+"These entrepreneurs make millions of dollars a year. They have zero employees. Let me show you."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">"Justin Welsh. Five million dollars a year. Ninety percent profit margins. He works four hours a day with one part-time assistant. Everything else is automated.
+
+Pieter Levels. Five point three million in revenue. Zero employees. He built Nomad List, Remote OK, Photo AI—runs them all from his laptop while traveling the world.
+
+Miss Excel—Kat Norton—made over a million dollars teaching people Excel on TikTok. She once made $100,000 in a single day from one webinar.
+
+[Beat, lean in]
+
+What do they have in common?
+
+They didn't hire teams. They built systems.
+
+They didn't work harder. They thought differently.
+
+They have a mindset that 99% of entrepreneurs never develop.
+
+[Direct to camera]
+
+The question isn't whether this is possible.
+
+The question is: why aren't you doing it?"</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"AI Summit 2026. Free. I'll teach you how to think like them. Link in bio."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="video-script">
+            <div class="video-header">
+                <div class="video-number">Video 8</div>
+                <div class="video-title">"I Almost Got AI Wrong"</div>
+                <div class="video-meta">
+                    <span class="video-tag">45-60 seconds</span>
+                    <span class="video-tag">Humility</span>
+                    <span class="video-tag">Authenticity</span>
+                </div>
+            </div>
+            <div class="video-body">
+                <div class="video-section">
+                    <div class="video-section-label">Hook (First 3 Seconds)</div>
+                    <div class="video-script-text">[Vishen, slight shake of head]
+
+"I've been in personal development for 20 years. And I almost got AI completely wrong."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Body</div>
+                    <div class="video-script-text">"When AI exploded, I treated it like every other tool.
+
+Learn it. Systematize it. Optimize it.
+
+Classic productivity mindset.
+
+I got marginal gains. Nothing transformative.
+
+[Beat]
+
+Then I realized: AI doesn't reward optimization.
+
+AI rewards letting go.
+
+Letting go of tasks you shouldn't be doing.
+
+Letting go of busywork you use to feel productive.
+
+Letting go of the identity of 'hard worker.'
+
+[Direct, intense]
+
+Most entrepreneurs can't do that. Their self-worth is tied to their hustle.
+
+So AI becomes another way to hustle faster.
+
+The real shift isn't learning AI.
+
+It's unlearning the belief that your value comes from being busy."</div>
+                </div>
+                <div class="video-section">
+                    <div class="video-section-label">Call to Action</div>
+                    <div class="video-cta">"That's what I'm teaching at AI Summit 2026. Free. Because this took me too long to figure out."</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 8: RECOMMENDATIONS -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">9</div>
+            <h2>Filming Priority & Recommendations</h2>
+            <p class="section-subtitle">What to produce first</p>
+        </div>
+
+        <h3>Recommended Filming Order for Vishen</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Priority</th>
+                    <th>Video</th>
+                    <th>Why This Order</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="priority priority-1">1st</span></td>
+                    <td>"The Lie I Believed"</td>
+                    <td>Best opening salvo—sets up the entire paradigm shift</td>
+                </tr>
+                <tr>
+                    <td><span class="priority priority-1">2nd</span></td>
+                    <td>"The 80% Failure"</td>
+                    <td>Most shareable stat, strong pattern interrupt</td>
+                </tr>
+                <tr>
+                    <td><span class="priority priority-2">3rd</span></td>
+                    <td>"The Question That Changed Everything"</td>
+                    <td>Emotional anchor, builds deep connection</td>
+                </tr>
+                <tr>
+                    <td><span class="priority priority-2">4th</span></td>
+                    <td>"The Ferrari and the Mailbox"</td>
+                    <td>Meme-able concept, high share potential</td>
+                </tr>
+                <tr>
+                    <td><span class="priority priority-3">5th</span></td>
+                    <td>"Why ChatGPT Failed You"</td>
+                    <td>Validates frustrated audience, builds trust</td>
+                </tr>
+                <tr>
+                    <td><span class="priority priority-3">6th</span></td>
+                    <td>"The Two Types of Entrepreneurs"</td>
+                    <td>Identity-based, drives FOMO</td>
+                </tr>
+                <tr>
+                    <td><span class="priority priority-2">7th</span></td>
+                    <td>"Million-Dollar One-Person Companies"</td>
+                    <td>Social proof, "show don't tell," creates desire</td>
+                </tr>
+                <tr>
+                    <td><span class="priority priority-3">8th</span></td>
+                    <td>"I Almost Got AI Wrong"</td>
+                    <td>Authenticity play, reinforces transformation</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Production Notes</h3>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-label">Setting</div>
+                <h4>Premium but Approachable</h4>
+                <p>Home office, outdoor terrace, or studio. Avoid overly corporate settings—this is about life freedom.</p>
+            </div>
+            <div class="card">
+                <div class="card-label">Tone</div>
+                <h4>Reflective + Intense</h4>
+                <p>Start contemplative, build to conviction. The paradigm shift should feel like a revelation.</p>
+            </div>
+            <div class="card">
+                <div class="card-label">Energy</div>
+                <h4>Grounded Authority</h4>
+                <p>Not hype. Not hustle. Calm confidence of someone who's figured something out.</p>
+            </div>
+            <div class="card">
+                <div class="card-label">Edit Style</div>
+                <h4>Jump Cuts + Text Overlays</h4>
+                <p>Key stats and phrases as text overlays. Keep pace quick but not frenetic.</p>
+            </div>
+        </div>
+
+        <div class="summary-box">
+            <h3>Deliverables Summary</h3>
+            <ul class="checklist">
+                <li><strong>Core Paradigm Shift</strong> — Mindset-first angle fully defined</li>
+                <li><strong>Research Foundation</strong> — 10+ stats with sources for credibility</li>
+                <li><strong>Case Studies</strong> — 4 real million-dollar solopreneurs (Justin Welsh, Pieter Levels, Miss Excel, Eric Barone)</li>
+                <li><strong>Paid Ad Copy</strong> — 4 Facebook/IG ads + 2 YouTube scripts</li>
+                <li><strong>Social Media Posts</strong> — 4 carousels (including "Show Don't Tell"), 4 text posts, 6 story hooks</li>
+                <li><strong>Viral Video Scripts</strong> — 8 complete scripts for Vishen (30-90 sec each)</li>
+                <li><strong>Filming Priority</strong> — Ordered by strategic impact</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Next Steps</h4>
+            <p>Ready to expand? Potential additions include:</p>
+            <ul>
+                <li>Quiz funnel with 5 avatars (parked for later)</li>
+                <li>Additional "Show Don't Tell" case study videos</li>
+                <li>B-roll / visual asset briefs for video production</li>
+                <li>Summit content outline leading to $6K pitch</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer style="text-align: center; padding: 40px; color: var(--gray-500); font-size: 14px;">
+    <p>AI Summit 2026 Marketing Proposal | Prepared for Mindvalley | February 2026</p>
+</footer>
+
+</body>
+</html>
